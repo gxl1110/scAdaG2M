@@ -62,10 +62,6 @@ def sc_handler(adata, args, copy=True, size_factors=True, normalize_input=True, 
 
         info_log.print(f"--------> Selected {num_gene_select} highly variable genes.")
 
-    info_log.print('----------------> Log-transforming and normalizing data ...')
-    # sc.pp.normalize_total(adata) # Adam / Quake_Smart-seq2_Diaphragm 数据集需要执行该代码
-    # sc.pp.log1p(adata)
-
     if normalize_input:
         sc.pp.scale(adata)
 
