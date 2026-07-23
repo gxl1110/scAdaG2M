@@ -194,7 +194,7 @@ class Model(nn.Module):
         else:
             self.model_name = param["student"]
 
-        if "AdaGMLP" == self.model_name:
+        if "AdaG2M" == self.model_name:
             self.encoder = AdaG2M(
                 num_layers=param["num_layers"],
                 input_dim=param["feat_dim"],
