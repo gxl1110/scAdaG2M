@@ -120,7 +120,7 @@ def save_embedding_with_labels(fusion_emb, cluster_pred, dataset_name):
     df_save = pd.DataFrame(emb_with_labels, columns=column_names)
     df_save.to_csv(save_path, index=False)
 
-    print(f"✅ Fusion embedding and tags have been saved: {save_path}")
+    print(f"Fusion embedding and tags have been saved: {save_path}")
 
 
 def make_dir(directory_path, new_folder_name):
