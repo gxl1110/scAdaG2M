@@ -2,4 +2,3 @@ data/
 *.h5 
 *.h5ad 
 *.loom 
-*.rds 
